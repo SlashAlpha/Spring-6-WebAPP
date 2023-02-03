@@ -21,6 +21,13 @@ public class Publisher {
     @OneToMany(mappedBy = "publisher")
     private Set<Book> books=new HashSet<>();
 
+    public Set<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(Set<Book> books) {
+        this.books = books;
+    }
 
     @Override
     public String toString() {

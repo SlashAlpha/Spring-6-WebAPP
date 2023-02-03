@@ -2,6 +2,7 @@ package slash.code.spring6webapp.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import slash.code.spring6webapp.services.BookService;
 
@@ -14,6 +15,7 @@ public class BookController {
         this.bookService = bookService;
     }
 
+    @RequestMapping("/books")
     public String getBooks(Model model){
         model.addAttribute("books",bookService.findAll());
 

@@ -19,4 +19,7 @@ public class AuthorController {
         return "authors";
 
     }
+    public String sayHi(){
+        return "Hello world";
+    }
 }

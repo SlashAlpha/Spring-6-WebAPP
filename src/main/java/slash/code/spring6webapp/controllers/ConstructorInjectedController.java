@@ -1,7 +1,9 @@
 package slash.code.spring6webapp.controllers;
 
+import org.springframework.stereotype.Controller;
 import slash.code.spring6webapp.services.GreetingService;
 
+@Controller
 public class ConstructorInjectedController {
     GreetingService greetingService;
 

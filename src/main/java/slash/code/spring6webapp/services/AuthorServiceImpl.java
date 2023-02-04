@@ -1,8 +1,10 @@
 package slash.code.spring6webapp.services;
 
+import org.springframework.stereotype.Service;
 import slash.code.spring6webapp.domain.Author;
 import slash.code.spring6webapp.repositories.AuthorRepository;
 
+@Service
 public class AuthorServiceImpl implements AuthorService {
 
     AuthorRepository authorRepository;

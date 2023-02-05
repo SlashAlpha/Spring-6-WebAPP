@@ -6,7 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import slash.code.spring6webapp.controllers.Myi18NController;
 
-@ActiveProfiles("EN")
+//@ActiveProfiles("EN") -- default
 @SpringBootTest
 class Myi18NControllerTestEN {
 
